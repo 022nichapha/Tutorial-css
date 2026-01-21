@@ -228,3 +228,29 @@ figcaption {
   text-shadow: 0 0 10px rgba(181, 255, 178, 0.8);
 }
 
+/* แก้ไขส่วนที่ 8 ให้มีพื้นหลังเป็นรูปมังกร */
+.card.local-image {
+    /* สำคัญ: ต้องสะกด 'imges' ให้ตรงกับชื่อโฟลเดอร์จริงของคุณ */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+                      url('../imges/112.jpg'); 
+    
+    background-size: cover;          /* ปรับรูปให้เต็มกล่อง */
+    background-position: center;      /* จัดรูปให้อยู่ตรงกลาง */
+    background-repeat: no-repeat;
+    border: 2px solid #b5ffb2 !important; /* เพิ่มขอบสีเขียวมังกร */
+    color: white !important;          /* เปลี่ยนสีตัวอักษรเป็นสีขาวเพื่อให้เด่น */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* เพิ่มเงาให้ตัวหนังสืออ่านง่ายขึ้น */
+}
+
+/* ปรับสีหัวข้อด้านในให้เข้ากับมังกร */
+.card.local-image h2 {
+    color: #b5ffb2 !important;
+}
+
+/* ปรับแต่งกล่อง Code ให้ดูโปร่งแสงและเข้ากับพื้นหลัง */
+.card.local-image pre {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #b5ffb2;
+    color: #9df59b !important;
+}
+
